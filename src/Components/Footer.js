@@ -22,8 +22,11 @@ const Footer = () => {
         <p><FaPhone /> +91-7969 0011 21</p>
         <p><FaMailBulk /> support@abc1234.com</p>
       </div>
-      <div className="footer-section quick-links">
+
+      <div className='mainquicklinks'>
       <h3>Quick Links</h3>
+      <div className="footer-section quick-links">
+   
         
         <div className='dividelinks'>
         <ul>
@@ -53,7 +56,7 @@ const Footer = () => {
         </ul>
         </div>
       </div>
-
+      </div>
       
 
      

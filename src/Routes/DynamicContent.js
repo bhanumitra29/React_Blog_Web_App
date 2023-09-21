@@ -52,6 +52,13 @@ const DynamicContent = () => {
         <div>
           <h2>{selectedItem.heading}</h2>
           <div className='logomainparent'>
+          <div className='iconsDisplay'>
+              <FaFacebook className='icons facebook' />
+              <FaTwitter className='icons twitter' />
+              <FaInstagram className='icons instagram' />
+              <FaYoutube className='icons youtube' />
+              <FaGithub className='icons github' />         
+            </div>
             <div className='logoinnerparent'>
               <img className='logoedit' src='https://avatars.githubusercontent.com/u/5465207?v=4' alt='Not Fount' />
               <p>Bhanu Mitra<br/>
@@ -59,7 +66,7 @@ const DynamicContent = () => {
               </p>
 
             </div>
-            <div>
+            <div className='iconsDisplay1'>
               <FaFacebook className='icons facebook' />
               <FaTwitter className='icons twitter' />
               <FaInstagram className='icons instagram' />
@@ -100,6 +107,27 @@ const DynamicContent = () => {
         </div>
       <div className='theLatest'>
    
+<div className='dynamicExtra'>
+      {contextData.filter((item) => {return item.cat === cat}).slice(0, 4).map((item,index)=>(
+        <div key={index} className='innerparent1234'>
+        <div>
+        <h4>{item.heading}</h4>
+        <p><span className='travel'>Bhanu Mitra</span> </p>
+        </div>
+
+        <div>
+          
+        <Link to= {`/dynamic/${item.cat}/${item.id}`} state={{ referrer: location.cat === cat }}>
+        <img className='techimageleft1234' src ={item.imageUrl} alt ='not found' />
+        </Link>
+        </div>
+        
+        
+      </div>
+      ))}
+
+      </div>
+      
 
       {contextData.filter((item) => {return item.cat === cat}).slice(0, 3).map((item,index)=>(
         <div key={index} className='innerparent12'>
@@ -119,8 +147,8 @@ const DynamicContent = () => {
 
       ))}
       </div>
-      
-    </div>
+      </div>
+   
   )
 }
 

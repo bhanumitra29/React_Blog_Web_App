@@ -19,7 +19,7 @@ const Home = () => {
       return shuffledArray;
     }
   return (
-    <>
+    <div className='mainHomeParent'>
     <div className='mainHomeClass'>
       
       <Slider />
@@ -116,12 +116,13 @@ const Home = () => {
         </div>
         <h4>{item.heading}</h4>
         <p><span className='travel'>Travel</span>  <span className='august'>/ August 21 2021</span></p>
-        <hr/>
+        
     </div>
   )
 })}
-</div>
 
+</div>
+<hr/>
 {shuffleArray(contextData).slice(0, 3).map((item, index) => {
             const currentNumber = number + index;
           return(
@@ -181,10 +182,10 @@ const Home = () => {
    {/* <hr className='lasthr'/> */}
    
  </div>
- <hr className='lasthr'/>
+ <hr className='lasthr1'/>
       <Footer />
       
-    </>
+    </div>
   )
 }
 

@@ -20,14 +20,17 @@ const DataCompo = () => {
         }
   return (
     <>
-    <div className='parentthe'><div className='the'>The</div> <div className='siren'>Siren</div>
-    </div>
-
+   
     <div>
+
             <BrowserRouter>
+          <div className='mainheadmobile'>
+          <div className='parentthe'><div className='the'>The</div> <span className='siren'>Siren</span>
+          </div>
 
             <div className="mobile-menu">
             <MobileDropdownMenu />
+          </div>
           </div>
                 <div className="navbar">
                 <NavLink style={({isActive}) => ({color: isActive ? "green" : "black"})} to='/' className="link">Home</NavLink>

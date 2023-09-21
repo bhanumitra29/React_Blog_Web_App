@@ -2,12 +2,13 @@ import React, { useContext } from 'react'
 import { Store } from '../Store/ContextCompo'
 import "../App.css"
 import { Link } from 'react-router-dom'
+import Footer from './Footer'
 
 const Food = () => {
   
   const [contextData] = useContext(Store)
   return (
-    <>
+    <div className='mainHomeParent'>
 
   <h2 className='headingLatest'>The Latest</h2>
         <div class="hr-container">
@@ -123,7 +124,8 @@ const Food = () => {
       </div>
       </div>
       
-      </>
+      <Footer />
+      </div>
   )
 }  
 
