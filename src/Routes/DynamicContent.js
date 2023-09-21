@@ -110,7 +110,7 @@ const DynamicContent = () => {
 <div className='dynamicExtra'>
       {contextData.filter((item) => {return item.cat === cat}).slice(0, 4).map((item,index)=>(
         <div key={index} className='innerparent1234'>
-        <div>
+        <div className='morefromwidth'>
         <h4>{item.heading}</h4>
         <p><span className='travel'>Bhanu Mitra</span> </p>
         </div>
@@ -130,7 +130,7 @@ const DynamicContent = () => {
       
 
       {contextData.filter((item) => {return item.cat === cat}).slice(0, 3).map((item,index)=>(
-        <div key={index} className='innerparent12'>
+        <div key={index} className='innerparent12345'>
         <Link to= {`/dynamic/${item.cat}/${item.id}`} state={{ referrer: location.cat === cat }}>
         <img className='techimageleft1' src ={item.imageUrl} alt ='not found' />
         </Link>
