@@ -47,6 +47,7 @@ const DynamicContent = () => {
       </div>
       <div className='dynamicParent'>
       {/* <h2>Dynamic Content Page</h2> */}
+      
       {selectedItem ? (
         <div>
           <h2>{selectedItem.heading}</h2>
@@ -75,6 +76,20 @@ const DynamicContent = () => {
       </div>
       </div>
 
+      
+      <div className='dynamicParent1'>
+      <span><FaHeart />  Like</span>
+      <hr className='lasthr'/>
+      <div className='logoinnerparent'>
+              <img className='logoedit1' src='https://avatars.githubusercontent.com/u/5465207?v=4' alt='Not Fount' />
+              <p>WRITTEN BY <br/>
+                <b>Bhanu Mitra</b><br/>
+                Nov 29, 2021
+              </p>
+
+            </div>
+            <hr className='lasthr'/>
+            </div>
         <div className='buttonparent'>
       <button onClick={handeBack} className='backbutton'>Back</button>
       </div>
@@ -95,7 +110,7 @@ const DynamicContent = () => {
         <div className='logoinnerparent'>
               <img className='logoedit' src='https://avatars.githubusercontent.com/u/5465207?v=4' alt='Not Fount' />
               <p>Bhanu Mitra<br/>
-                Nov 29, 2021
+                Nov 29 . 4 Min read
               </p>
 
             </div>

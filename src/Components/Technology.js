@@ -26,6 +26,7 @@ const Technology = () => {
            </Link>
            <h4>{item.heading}</h4>
            <p>{item.outertext}</p>
+           <p><span className='travel'>Travel</span>  <span className='august'>/ August 21 2021</span></p>
            {/* </div> */}
            
        </div>
@@ -54,6 +55,7 @@ const Technology = () => {
                 <div className='headingandouter'>
                 <h4>{item.heading}</h4>
                 <p>{item.outertext}</p>
+                <p><span className='travel'>Travel</span>  <span className='august'>/ August 21 2021</span></p>
                 </div>
                 
             </div>
@@ -79,13 +81,17 @@ const Technology = () => {
 {contextData.filter((item) => item.id ===11).map((item,index)=>{
   return(
     <div key={index}>
-      <div className='imagenumber'>
+      
       <Link to={`/dynamic/${item.cat}/${item.id}`} state={{ referrer: '/technology' }}>
         <img className='techimageright1' src ={item.imageUrl} alt ='not found' />
         </Link>
+        <div className='imagenumber'>
+       <div className='spantravel'>
+        <h4>{item.heading}</h4>
+        <p><span className='travel'>Travel</span>  <span className='august'>/ August 21 2021</span></p>
+        </div>
         <h1 className='toppostsnumber'>{item.topposts}</h1>
         </div>
-        <h4>{item.heading}</h4>
         <hr/>
     </div>
   )
@@ -99,7 +105,10 @@ const Technology = () => {
                 <img className='techimageright' src ={item.imageUrl} alt ='not found' />
                 </Link>
                 <div className='headingandouter12'>
+                  <div>
                 <h4>{item.heading}</h4>
+                <p><span className='travel'>Travel</span>  <span className='august'>/ August 21 2021</span></p>
+                </div>
                 <h1 className='toppostsnumber'>{item.topposts}</h1>
                 </div>
               
