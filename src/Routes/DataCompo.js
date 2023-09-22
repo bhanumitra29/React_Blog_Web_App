@@ -24,14 +24,35 @@ const DataCompo = () => {
     <div>
 
             <BrowserRouter>
-          <div className='mainheadmobile'>
-          <div className='parentthe'><div className='the'>The</div> <span className='siren'>Siren</span>
-          </div>
+            
+          {/* <div className='mainheadmobile'>
+          <div><span id='the'>The</span> <span className='siren'>Siren</span></div>
+          
+          <button className='buttoninDynamic'>Get Started</button>
+          </div> */}
 
-            <div className="mobile-menu">
+            {/* <div className="mobile-menu">
             <MobileDropdownMenu />
-          </div>
-          </div>
+          </div> */}
+
+<div className='mainheadmobile'>
+                <div className='sirenmain'>
+                    {/* <NavLink style={{ color: "black", textDecoration: "none" }} to="/"> */}
+
+                        <h1 className='sirenHead' style={{  margin: "0px 0px 10px 0px", padding: 0 }}><span id='the'>The</span> <span className='sirenBody'>Siren</span></h1>
+                    {/* </NavLink> */}
+
+                    <div className='buttonMain'>
+                <button className='buttoninDynamic'>Get Started</button>
+                </div>
+                </div>
+ </div>
+            <div className='mobile-menu'>
+            <MobileDropdownMenu />
+            </div>
+            
+          
+          
                 <div className="navbar">
                 <NavLink style={({isActive}) => ({color: isActive ? "green" : "black"})} to='/' className="link">Home</NavLink>
                 <NavLink style={({isActive}) => ({color: isActive ? "green" : "black"})} to='/bollywood' className="link">Bollywood</NavLink>

@@ -11,8 +11,8 @@ const Technology = () => {
     <div className='mainHomeParent'>
 
   <h2 className='headingLatest'>The Latest</h2>
-        <div class="hr-container">
-       <hr class="custom-hr"/>
+        <div className="hr-container">
+       <hr className="custom-hr"/>
         </div>
         <div className='theLatest'>
    
@@ -43,13 +43,37 @@ const Technology = () => {
     <div className='techparent'>
       <div className='leftdiv'>
         <h2>Technology</h2>
-        <div class="hr-container">
-       <hr class="custom-hr"/>
+        <div className="hr-container">
+       <hr className="custom-hr"/>
         </div>
+
+        <div className='outertext1'>
         {contextData.filter((item) => item.id <=7).map((item,index)=>{
           return(
-            <div>
-            <div key={index} className='innerparent1'>
+            <div key={index}>
+            <div className='innerparent1'>
+            <Link to={`/dynamic/${item.cat}/${item.id}`} state={{ referrer: '/technology' }}>
+                <img className='techimageleft' src ={item.imageUrl} alt ='not found' />
+                </Link>
+                <div className='headingandouter'>
+                <h4>{item.heading}</h4>
+                <p>{item.outertext.split(' ',15).join(' ')}</p>
+                <p><span className='travel'>Travel</span>  <span className='august'>/ August 21 2021</span></p>
+                </div>
+                
+            </div>
+            <hr className='lasthr'/>
+            </div>
+          )
+        })}
+        </div>
+
+
+<div className='outertext'>
+{contextData.filter((item) => item.id <=7).map((item,index)=>{
+          return(
+            <div key={index}>
+            <div className='innerparent1'>
             <Link to={`/dynamic/${item.cat}/${item.id}`} state={{ referrer: '/technology' }}>
                 <img className='techimageleft' src ={item.imageUrl} alt ='not found' />
                 </Link>
@@ -64,6 +88,8 @@ const Technology = () => {
             </div>
           )
         })}
+
+    </div>
       </div>
 
 
@@ -73,8 +99,8 @@ const Technology = () => {
       <div className='rightdiv'>
 
         <h2>Top Posts</h2>
-        <div class="hr-container1">
-       <hr class="custom-hr1"/>
+        <div className="hr-container1">
+       <hr className="custom-hr1"/>
         </div>
         <div>
 
@@ -100,8 +126,8 @@ const Technology = () => {
 </div>
       {contextData.filter((item) => item.id >11 && item.id<=14).map((item,index)=>{
           return(
-            <div>
-            <div key={index} className='innerparent1'>
+            <div key={index}>
+            <div className='innerparent1'>
             <Link to={`/dynamic/${item.cat}/${item.id}`} state={{ referrer: '/technology' }}>
                 <img className='techimageright' src ={item.imageUrl} alt ='not found' />
                 </Link>

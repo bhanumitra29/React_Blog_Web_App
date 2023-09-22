@@ -5,7 +5,13 @@ import { Link } from 'react-router-dom'
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaGithub, FaShare, FaHeart} from 'react-icons/fa'
 
 const DynamicContent = () => {
-
+//   let abc = document.getElementsByClassName('navbar')[0]
+//   let abcd = document.getElementsByClassName('buttonMain')[0]
+//   let abcde = document.getElementsByClassName('mobile-menu1')[0]
+//   abcd.classList.add ('displayB')
+//   abc.classList.add('displayN')
+// abcde.classList.add('displayNN')
+  
     const { id, cat } = useParams();
     const [contextData] = useContext(Store);
     const navigate = useNavigate();
@@ -21,12 +27,18 @@ const DynamicContent = () => {
     // }
 
     const handeBack = () => {
-        
         if (location.state && location.state.referrer) {
             navigate(location.state.referrer);
           } else {
             navigate('/');
       };
+
+      
+    //  abcd.classList.remove('displayB')
+    //  abc.classList.remove('displayN')
+    // //  abc.classList.add('navbar')
+    // abcde.classList.remove('displayNN')
+
     }
 
    
@@ -39,7 +51,7 @@ const DynamicContent = () => {
     
 
   return (
-    <div>
+    <div className='dynamicmainparent'>
       <div className='parentparent'>
       <div className='likeandshare'>
         <span><FaHeart />  Like</span>

@@ -66,10 +66,33 @@ const Home = () => {
         <div className="hr-container">
        <hr className="custom-hr"/>
         </div>
+
+        <div className='outertext1'>
         {shuffleArray(contextData).slice(0, 4).map((item, index) => {
           return(
             <div key={index}>
             <div  className='innerparent1'>
+            <Link to={`/dynamic/${item.cat}/${item.id}`}>
+                <img className='techimageleft' src ={item.imageUrl} alt ='not found' />
+                </Link>
+                <div className='headingandouter'>
+                <h4>{item.heading.split(' ',7).join(' ')}</h4>
+                <p>{item.outertext.split(' ',10).join(' ')}</p>
+                <p><span className='travel'>Travel</span>  <span className='august'>/ August 21 2021</span></p>
+                </div>
+                
+            </div>
+            <hr className='lasthr'/>
+            </div>
+          )
+        })}<br/><br/><br/>
+        </div>
+
+        <div className='outertext'>
+        {shuffleArray(contextData).slice(0, 4).map((item, index) => {
+          return(
+            <div key={index}>
+            <div className='innerparent1'>
             <Link to={`/dynamic/${item.cat}/${item.id}`}>
                 <img className='techimageleft' src ={item.imageUrl} alt ='not found' />
                 </Link>
@@ -85,6 +108,8 @@ const Home = () => {
             </div>
           )
         })}<br/><br/><br/>
+        </div>
+
 <div className='mainSliderParent1'>
     <SliderSecond />
     </div>
@@ -182,7 +207,7 @@ const Home = () => {
    {/* <hr className='lasthr'/> */}
    
  </div>
- <hr className='lasthr1'/>
+ {/* <hr className='lasthr1'/> */}
       <Footer />
       
     </div>
