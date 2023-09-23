@@ -11,6 +11,11 @@ const DynamicContent = () => {
 //   abcd.classList.add ('displayB')
 //   abc.classList.add('displayN')
 // abcde.classList.add('displayNN')
+
+// var nav = document.getElementsByClassName("navbar")[0];
+//   nav.classList.add("navdisplay");
+//   var siren = document.getElementsByClassName("sirenHead")[0];
+//   siren.classList.add("sirenleft");
   
     const { id, cat } = useParams();
     const [contextData] = useContext(Store);
@@ -24,9 +29,18 @@ const DynamicContent = () => {
         // navigate(location.state.referrer);
         // navigate(`/${cat}` || '/');
         // navigate(location.state.referrer || '/');
+        
     // }
 
     const handeBack = () => {
+
+
+    //   var nav = document.getElementsByClassName("navbar")[0];
+    // nav.classList.remove("navdisplay");
+    // var siren = document.getElementsByClassName("sirenHead")[0];
+    // siren.classList.remove("sirenleft");
+
+
         if (location.state && location.state.referrer) {
             navigate(location.state.referrer);
           } else {

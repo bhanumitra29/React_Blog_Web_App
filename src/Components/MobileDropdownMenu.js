@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-
+import { FaBars } from "react-icons/fa";
 const MobileDropdownMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,7 +21,8 @@ const MobileDropdownMenu = () => {
     <div>
     <div className="mobile-menu1">
       <button className="menu-toggle-button" onClick={toggleMenu}>
-        Menu
+        {/* Menu */}
+        <FaBars />
       </button>
       </div>
       <div className="mobile-dropdown-menu" style={dropdownMenuStyle}>

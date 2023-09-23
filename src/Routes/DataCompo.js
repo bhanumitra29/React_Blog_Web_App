@@ -35,23 +35,27 @@ const DataCompo = () => {
             <MobileDropdownMenu />
           </div> */}
 
-<div className='mainheadmobile'>
-                <div className='sirenmain'>
+          {/* <div className='mainheadmobile'> */}
+              <div className='sirenmain'>
                     {/* <NavLink style={{ color: "black", textDecoration: "none" }} to="/"> */}
-
-                        <h1 className='sirenHead' style={{  margin: "0px 0px 10px 0px", padding: 0 }}><span id='the'>The</span> <span className='sirenBody'>Siren</span></h1>
+                          <div className='sirenHead'>
+                        <h1 style={{  margin: "0px 0px 10px 0px", padding: 0 }}>
+                        <span id='the'>The</span> 
+                        <span className='sirenBody'>Siren</span></h1>
                     {/* </NavLink> */}
-
-                    <div className='buttonMain'>
+                    </div>
+                <div className='buttonMain'>
                 <button className='buttoninDynamic'>Get Started</button>
                 </div>
-                </div>
- </div>
-            <div className='mobile-menu'>
+              </div>
+            {/* </div> */}
+        <div className='mobile-menu'>
             <MobileDropdownMenu />
             </div>
             
           
+
+ 
           
                 <div className="navbar">
                 <NavLink style={({isActive}) => ({color: isActive ? "green" : "black"})} to='/' className="link">Home</NavLink>
