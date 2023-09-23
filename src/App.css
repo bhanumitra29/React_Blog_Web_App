@@ -1,6 +1,7 @@
-/* .App {
-  text-align: center;
-} */
+.App {
+  /* text-align: center; */
+  overflow-x: hidden;
+}
 
 /* .mainheadmobile{
   display: flex;
@@ -582,6 +583,7 @@
 
 
 
+
 @media (max-width: 768px) {
   .mobile-menu {
     display: block; 
@@ -626,7 +628,7 @@
   justify-content: space-between;
   /* text-align: center; */
   align-items: center;
-  width: 100%;
+  width: 98%;
 }
 .sirenmain {
   width: 90%;
@@ -739,6 +741,7 @@
   position: absolute;
   top: 1em;
   right: 1em;
+  margin-left: 0.5em;
 }
 
 
@@ -1039,7 +1042,8 @@
   .navbar{
     display: flex;
     justify-content: space-evenly;
-    width: 95%;
+    width: 85%;
+    margin: auto;
   }
 
   .mainHomeClass{
@@ -1048,13 +1052,13 @@
   }
 
   .sirenmain {
-    width: 100%;
+    width: 80%;
     text-align: center;
     height: 4em;
     display: flex;
     justify-content: space-evenly;
     /* border: 1px solid red; */
-    /* margin: auto; */
+    margin: auto;
   }
   
 
@@ -1064,10 +1068,10 @@
     justify-content: space-around;
     /* margin-left: 1em; */
     /* width: 10%; */
-    /* margin: auto; */
+    margin: auto;
     /* margin-top: 1em; */
     margin-bottom: 1em;
-    width: 95%;
+    width: 80%;
   } 
 
   /* .buttoninDynamic{
@@ -1210,7 +1214,7 @@
   margin: auto;
   /* justify-content: center; */
   align-items: center;
-  width: 95%;
+  width: 99%;
   border-top: 1px solid grey;
 }
 .mainparentfooter{
@@ -1245,7 +1249,7 @@
   flex-direction: row;
   /* align-items: flex-start; */
   /* flex-wrap: wrap; */
-  width: 95%;
+  width: 99%;
 }
 
 .lasthr1{
@@ -1255,7 +1259,8 @@
 
 .mainHomeParent{
   overflow-x: hidden;
-  width: 95%;
+  width: 99%;
+  margin: auto;
 }
 
 .dynamicmainparent{
@@ -1377,6 +1382,11 @@
 
 .outertext1{
   display: none;
+
+}
+
+.outertext{
+  display: block;
 }
 
 }
